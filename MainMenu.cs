@@ -16,5 +16,16 @@ namespace Attendance
         {
             InitializeComponent();
         }
+
+        private void MainMenu_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            System.Environment.Exit(System.Environment.ExitCode);
+        }
+
+        private void BtnWorkShiftSetting_Click(object sender, EventArgs e)
+        {
+            WorkShiftSetting f = new WorkShiftSetting();
+            f.Show();         
+        }
     }
 }

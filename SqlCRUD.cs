@@ -16,9 +16,9 @@ namespace Attendance
         {
             try
             {
-                if (db == "mtb")
+                if (db == "mdb")
                 {
-                    oleCon = new OleDbConnection("provider=Microsoft.ACE.Oledb.12.0;data source=AppData\\MyDataBase.accdb");
+                    oleCon = new OleDbConnection("provider=Microsoft.ACE.Oledb.12.0;data source=AppData\\MyDataBase.mdb");
                 }
                 
                 oleCmd = new OleDbCommand(query, oleCon);
@@ -38,9 +38,9 @@ namespace Attendance
             OleDbConnection oleCon = new OleDbConnection();
             try
             {
-                if (db == "mtb")
+                if (db == "mdb")
                 {
-                    oleCon = new OleDbConnection("provider=Microsoft.ACE.Oledb.12.0;data source=AppData\\MyDataBase.accdb");
+                    oleCon = new OleDbConnection("provider=Microsoft.ACE.Oledb.12.0;data source=AppData\\MyDataBase.mdb");
                 }
 
                 OleDbCommand oleCmd = new OleDbCommand(query, oleCon);

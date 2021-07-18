@@ -20,7 +20,9 @@ namespace Attendance
  
         private void Btn_Login_Click(object sender, EventArgs e)
         {
-
+            MainMenu f = new MainMenu();
+            this.Hide();
+            f.ShowDialog();
         }
 
         private void Tb_Account_KeyDown(object sender, KeyEventArgs e)
