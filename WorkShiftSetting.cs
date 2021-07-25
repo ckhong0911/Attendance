@@ -28,7 +28,7 @@ namespace Attendance
             groupBox2.Visible = false;
             groupBox3.Visible = false;
             BtnOK_1.Visible = true;
-            BtnReset.Visible = false;
+            //BtnReset.Visible = false;
             txtWorkTime.Text = "0";
             txtRestTime.Text = "0";
             lblSum.Text = "0";
@@ -209,7 +209,7 @@ namespace Attendance
                 BtnOK_1.Visible = false;
                 groupBox2.Visible = true;
                 groupBox3.Visible = true;
-                BtnReset.Visible = true;
+                //BtnReset.Visible = true;
 
                 ////Step3: 自動運算
                 string countQuery = "Select Sum(小計) as total From [休息時間設定] Where 班別='" + cboX.Text + "'";
