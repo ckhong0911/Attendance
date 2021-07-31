@@ -346,6 +346,11 @@ namespace Attendance
 
                 getData(cboX.Text);
 
+                BtnOK_1.Visible = false;
+                groupBox2.Visible = true;
+                groupBox3.Visible = true;
+                BtnReset.Visible = true;
+
                 ////Step3: 自動運算
                 string countQuery = "Select Sum(小計) as total From [休息時間設定] Where 班別='" + cboX.Text + "'";
                 DataTable countTable = SqlCRUD.SqlQuery(countQuery, "mdb");

@@ -37,7 +37,7 @@ namespace Attendance
         private void 排班設定ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             WorkShiftSetting f = new WorkShiftSetting();
-            f.ShowDialog();
+            f.Show();         
         }
 
         //private void BtnWorkShiftSetting_Click(object sender, EventArgs e)
