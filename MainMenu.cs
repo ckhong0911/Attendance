@@ -22,10 +22,28 @@ namespace Attendance
             System.Environment.Exit(System.Environment.ExitCode);
         }
 
-        private void BtnWorkShiftSetting_Click(object sender, EventArgs e)
+        private void 員工基本資料ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EmployDataCreate f = new EmployDataCreate();
+            f.ShowDialog();
+        }
+
+        private void 行事曆維護ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Calendar f = new Calendar();
+            f.ShowDialog();
+        }
+
+        private void 排班設定ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             WorkShiftSetting f = new WorkShiftSetting();
-            f.Show();         
+            f.ShowDialog();
         }
+
+        //private void BtnWorkShiftSetting_Click(object sender, EventArgs e)
+        //{
+        //    WorkShiftSetting f = new WorkShiftSetting();
+        //    f.Show();         
+        //}
     }
 }

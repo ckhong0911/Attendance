@@ -57,5 +57,24 @@ namespace Attendance
                 return null;
             }
         }
+
+        public static OleDbConnection OleRead(string db)
+        {
+            OleDbConnection oleCon = new OleDbConnection();
+            try
+            {
+                if (db == "mdb")  //CT_PSI 資料庫
+                {
+                    oleCon = new OleDbConnection("provider=Microsoft.ACE.Oledb.12.0;data source=AppData\\MyDataBase.mdb");
+                }
+
+                return oleCon;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "IT", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
+                return null;
+            }
+        }
     }
 }
