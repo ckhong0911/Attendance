@@ -49,16 +49,40 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="基本資料維護\員工基本資料\AnnualLeaveCount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基本資料維護\員工基本資料\AnnualLeaveCount.Designer.cs">
+      <DependentUpon>AnnualLeaveCount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基本資料維護\加班登錄\FilterQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基本資料維護\加班登錄\FilterQuery.Designer.cs">
+      <DependentUpon>FilterQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基本資料維護\加班登錄\OverTime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基本資料維護\加班登錄\OverTime.Designer.cs">
+      <DependentUpon>OverTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基本資料維護\員工基本資料\ShiftChoose.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基本資料維護\員工基本資料\ShiftChoose.Designer.cs">
+      <DependentUpon>ShiftChoose.cs</DependentUpon>
+    </Compile>
     <Compile Include="基本資料維護\Calendar.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="基本資料維護\Calendar.Designer.cs">
       <DependentUpon>Calendar.cs</DependentUpon>
     </Compile>
-    <Compile Include="基本資料維護\EmployDataCreate.cs">
+    <Compile Include="基本資料維護\員工基本資料\EmployDataCreate.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="基本資料維護\EmployDataCreate.Designer.cs">
+    <Compile Include="基本資料維護\員工基本資料\EmployDataCreate.Designer.cs">
       <DependentUpon>EmployDataCreate.cs</DependentUpon>
     </Compile>
     <Compile Include="Library\GetDateTime.cs" />
@@ -83,10 +107,22 @@
     <Compile Include="WorkShiftSetting.Designer.cs">
       <DependentUpon>WorkShiftSetting.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="基本資料維護\加班登錄\FilterQuery.resx">
+      <DependentUpon>FilterQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基本資料維護\加班登錄\OverTime.resx">
+      <DependentUpon>OverTime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基本資料維護\員工基本資料\AnnualLeaveCount.resx">
+      <DependentUpon>AnnualLeaveCount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基本資料維護\員工基本資料\ShiftChoose.resx">
+      <DependentUpon>ShiftChoose.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="基本資料維護\Calendar.resx">
       <DependentUpon>Calendar.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="基本資料維護\EmployDataCreate.resx">
+    <EmbeddedResource Include="基本資料維護\員工基本資料\EmployDataCreate.resx">
       <DependentUpon>EmployDataCreate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">

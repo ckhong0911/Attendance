@@ -157,39 +157,40 @@ namespace Attendance
             // 員工基本資料ToolStripMenuItem
             // 
             this.員工基本資料ToolStripMenuItem.Name = "員工基本資料ToolStripMenuItem";
-            this.員工基本資料ToolStripMenuItem.Size = new System.Drawing.Size(210, 30);
+            this.員工基本資料ToolStripMenuItem.Size = new System.Drawing.Size(216, 30);
             this.員工基本資料ToolStripMenuItem.Text = "員工基本資料";
             this.員工基本資料ToolStripMenuItem.Click += new System.EventHandler(this.員工基本資料ToolStripMenuItem_Click);
             // 
             // 行事曆維護ToolStripMenuItem
             // 
             this.行事曆維護ToolStripMenuItem.Name = "行事曆維護ToolStripMenuItem";
-            this.行事曆維護ToolStripMenuItem.Size = new System.Drawing.Size(210, 30);
+            this.行事曆維護ToolStripMenuItem.Size = new System.Drawing.Size(216, 30);
             this.行事曆維護ToolStripMenuItem.Text = "行事曆維護";
             this.行事曆維護ToolStripMenuItem.Click += new System.EventHandler(this.行事曆維護ToolStripMenuItem_Click);
             // 
             // 請假登錄ToolStripMenuItem
             // 
             this.請假登錄ToolStripMenuItem.Name = "請假登錄ToolStripMenuItem";
-            this.請假登錄ToolStripMenuItem.Size = new System.Drawing.Size(210, 30);
+            this.請假登錄ToolStripMenuItem.Size = new System.Drawing.Size(216, 30);
             this.請假登錄ToolStripMenuItem.Text = "請假登錄";
             // 
             // 加班登錄ToolStripMenuItem
             // 
             this.加班登錄ToolStripMenuItem.Name = "加班登錄ToolStripMenuItem";
-            this.加班登錄ToolStripMenuItem.Size = new System.Drawing.Size(210, 30);
+            this.加班登錄ToolStripMenuItem.Size = new System.Drawing.Size(216, 30);
             this.加班登錄ToolStripMenuItem.Text = "加班登錄";
+            this.加班登錄ToolStripMenuItem.Click += new System.EventHandler(this.加班登錄ToolStripMenuItem_Click);
             // 
             // 上下班補登ToolStripMenuItem
             // 
             this.上下班補登ToolStripMenuItem.Name = "上下班補登ToolStripMenuItem";
-            this.上下班補登ToolStripMenuItem.Size = new System.Drawing.Size(210, 30);
+            this.上下班補登ToolStripMenuItem.Size = new System.Drawing.Size(216, 30);
             this.上下班補登ToolStripMenuItem.Text = "上/下班補登";
             // 
             // 加班補登ToolStripMenuItem
             // 
             this.加班補登ToolStripMenuItem.Name = "加班補登ToolStripMenuItem";
-            this.加班補登ToolStripMenuItem.Size = new System.Drawing.Size(210, 30);
+            this.加班補登ToolStripMenuItem.Size = new System.Drawing.Size(216, 30);
             this.加班補登ToolStripMenuItem.Text = "加班補登";
             // 
             // toolStripDropDownButton3

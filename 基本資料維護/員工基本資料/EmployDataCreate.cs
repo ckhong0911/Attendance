@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.OleDb;
 
 namespace Attendance
 {
@@ -77,6 +78,11 @@ namespace Attendance
                 MessageBox.Show("未輸入職務屬性", "System", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
                 return;
             }
+            else if (txtShift.Text == "")
+            {
+                MessageBox.Show("未選擇上班班別", "System", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
+                return;
+            }
             else if (int.TryParse(TbVacation.Text, out num1) == false)
             {
                 MessageBox.Show("特休天數必須為數字", "System", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
@@ -94,14 +100,14 @@ namespace Attendance
                 string dateIn = DpIn.Text;
                 string insertQuery = "";
 
-                string cardNumberQuery = "Select 離職 From [員工基本資料] Where 員工卡號='" + TbCardNumber.Text + "' And 離職='false'";
+                string cardNumberQuery = "Select 離職 From [員工基本資料] Where 員工卡號='" + TbCardNumber.Text + "' And 離職='否'";
                 DataTable table = SqlCRUD.SqlQuery(cardNumberQuery, "mdb");
 
                 if (table.Rows.Count == 0)
                 {
-                    insertQuery = "Insert into [員工基本資料] (員工卡號,員工編號,員工姓名,性別,生日,到職日,職務屬性,特休天數,離職) values" +
+                    insertQuery = "Insert into [員工基本資料] (員工卡號,員工編號,員工姓名,性別,生日,到職日,職務屬性,特休天數,離職,班別) values" +
                             "('" + arr[0] + "','" + arr[1] + "','" + arr[2] + "','" + arr[3] + "','" + birthday + "','" + dateIn +
-                            "','" + arr[4] + "','" + arr[5] + "','false')";
+                            "','" + arr[4] + "','" + arr[5] + "','否','" + txtShift.Text + "')";
 
                     new SqlCRUD(insertQuery, "mdb");
                     MessageBox.Show("新增完成", "System", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1);
@@ -122,7 +128,7 @@ namespace Attendance
         //更新資料
         private void BtnUpdate_Click(object sender, EventArgs e)
         {
-            string[] arr = { txtCardNumber.Text, TbID2.Text, TbName2.Text, "", comboBox2.Text, TbVacation2.Text };
+            string[] arr = { txtCardNumber.Text, TbID2.Text, TbName2.Text, "", comboBox2.Text, TbVacation2.Text, txtShiftUpdate.Text };
             int num1;
 
             if (arr[0] == "")
@@ -168,7 +174,7 @@ namespace Attendance
 
             if (MessageBox.Show("是否更新?", "System", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
             {
-                string cardNumberQuery = "Select * From [員工基本資料] Where 員工卡號='" + arr[0] + "' And 離職='false'";
+                string cardNumberQuery = "Select * From [員工基本資料] Where 員工卡號='" + arr[0] + "' And 離職='否'";
                 DataTable table = SqlCRUD.SqlQuery(cardNumberQuery, "mdb");
 
                 if (table.Rows.Count == 0)
@@ -182,14 +188,14 @@ namespace Attendance
                     if (cb1.Checked == true)
                     {
                         updateQuery = "Update [員工基本資料] Set 員工編號='" + arr[1] + "',員工姓名='" + arr[2] + "',性別='" + arr[3] +
-                            "',生日='" + birthday + "',到職日='" + dateIn + "',職務屬性='" + arr[4] + "',特休天數='" + arr[5] +
+                            "',生日='" + birthday + "',到職日='" + dateIn + "',職務屬性='" + arr[4] + "',特休天數='" + arr[5] + "',班別='" + arr[6] +
                             "' Where 員工卡號='" + arr[0] + "'";
                     }
                     else
                     {
                         updateQuery = "Update [員工基本資料] Set 員工編號='" + arr[1] + "',員工姓名='" + arr[2] + "',性別='" + arr[3] +
-                            "',生日='" + birthday + "',到職日='" + dateIn + "',職務屬性='" + arr[4] + "',特休天數='" + arr[5] +
-                            "',離職='true',離職日='" + quit + "' Where 員工卡號='" + arr[0] + "'";
+                            "',生日='" + birthday + "',到職日='" + dateIn + "',職務屬性='" + arr[4] + "',特休天數='" + arr[5] + "',班別='" + arr[6] +
+                            "',離職='是',離職日='" + quit + "' Where 員工卡號='" + arr[0] + "'";
                     }
                 }
 
@@ -205,7 +211,7 @@ namespace Attendance
         //更新資料頁面 查詢按鈕
         private void BtnQuery_Click_1(object sender, EventArgs e)
         {
-            string cardNumberQuery = "Select * From [員工基本資料] Where 員工卡號='" + txtCardNumber.Text + "' And 離職='false'";
+            string cardNumberQuery = "Select * From [員工基本資料] Where 員工卡號='" + txtCardNumber.Text + "' And 離職='否'";
             DataTable table = SqlCRUD.SqlQuery(cardNumberQuery, "mdb");
 
             if (table.Rows.Count == 1)
@@ -412,7 +418,8 @@ namespace Attendance
                         DpIn2.Value = Convert.ToDateTime(Dt2.Rows[i].Cells[7].Value);
                         comboBox2.Text = Dt2.Rows[i].Cells[9].Value.ToString();
                         TbVacation2.Text = Dt2.Rows[i].Cells[10].Value.ToString();
-                        
+                        txtShiftUpdate.Text = Dt2.Rows[i].Cells[12].Value.ToString();
+
                         if (quit == "true")
                         {
                             cb1.Checked = false;
@@ -431,6 +438,24 @@ namespace Attendance
                     }
             }
             
+        }
+
+        private void BtnOpen_Click(object sender, EventArgs e)
+        {
+            ShiftChoose s = new ShiftChoose(this,1);
+            s.ShowDialog();
+        }
+
+        private void BtnOpen2_Click(object sender, EventArgs e)
+        {
+            ShiftChoose s = new ShiftChoose(this, 2);
+            s.ShowDialog();
+        }
+
+        private void BtnAnnualLeave_Click(object sender, EventArgs e)
+        {
+            AnnualLeaveCount f = new AnnualLeaveCount(TbName.Text, DpIn.Value);
+            f.ShowDialog();
         }
     }
 }

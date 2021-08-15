@@ -40,6 +40,12 @@ namespace Attendance
             f.ShowDialog();
         }
 
+        private void 加班登錄ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //OverTime f = new OverTime();
+            //f.ShowDialog();
+        }
+
         //private void BtnWorkShiftSetting_Click(object sender, EventArgs e)
         //{
         //    WorkShiftSetting f = new WorkShiftSetting();
