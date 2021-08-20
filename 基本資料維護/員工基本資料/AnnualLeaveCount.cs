@@ -5,10 +5,27 @@ namespace Attendance
 {
     public partial class AnnualLeaveCount : Form
     {
+<<<<<<< HEAD
+        int flag;
+        EmployDataCreate emp;
+=======
+>>>>>>> 5c66bde0f1701b8080dad176d8df9347aa0cef95
 
         public AnnualLeaveCount()
         {
             InitializeComponent();
+<<<<<<< HEAD
+        }
+
+        public AnnualLeaveCount(string name, DateTime date, int flag, EmployDataCreate emp)
+        {
+            InitializeComponent();
+            this.flag = flag;
+            this.emp = emp;
+
+            lblname.Text = name;
+            DpIn.Value = date;
+=======
 
             //程式測試
             DpIn.Format = DateTimePickerFormat.Custom;
@@ -21,6 +38,7 @@ namespace Attendance
             InitializeComponent();
             //lblname.Text = name;
             //DpIn.Value = date;
+>>>>>>> 5c66bde0f1701b8080dad176d8df9347aa0cef95
             DpIn.Format = DateTimePickerFormat.Custom;
             DateTime currentTime = System.DateTime.Now;
             UD_Year.Value = currentTime.Year;
@@ -181,5 +199,59 @@ namespace Attendance
             }
                 
         }
+<<<<<<< HEAD
+
+        private void Rb_1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (Rb_1.Checked)
+            {
+                //手動填寫
+                lblValue.Enabled = true;
+                panel1.Visible = false;
+                panel2.Visible = false;
+                lblValue.Focus();
+            }
+            else
+            {
+                //公式導入
+                lblValue.Enabled = false;
+                panel1.Visible = true;
+                panel2.Visible = true;
+            }             
+        }
+
+        private void BtnOutputAnnualLeave_Click(object sender, EventArgs e)
+        {
+            double count;
+
+            if (lblValue.Text.Length > 0)
+            {
+                if (double.TryParse(lblValue.Text, out count) == true)
+                {
+                    if (flag == 1)
+                        emp.TbVacation.Text = lblValue.Text;
+                    else
+                        emp.TbVacation2.Text = lblValue.Text;
+
+                    Close();
+                }                  
+                else
+                {
+                    MessageBox.Show("特休天數必須為數字", "System", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
+                    lblValue.Text = "";
+                    lblValue.Focus();
+                    return;
+                }                   
+            }
+            else
+            {
+                MessageBox.Show("特休天數不可空白", "System", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
+                lblValue.Focus();
+                return;
+            }
+        }
+
+=======
+>>>>>>> 5c66bde0f1701b8080dad176d8df9347aa0cef95
     }
 }

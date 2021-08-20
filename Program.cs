@@ -16,7 +16,11 @@ namespace Attendance
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+<<<<<<< HEAD
+            Application.Run(new OverTime());
+=======
             Application.Run(new AnnualLeaveCount());
+>>>>>>> 5c66bde0f1701b8080dad176d8df9347aa0cef95
         }
     }
 }

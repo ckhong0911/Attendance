@@ -28,11 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
+<<<<<<< HEAD
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OverTime));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.button1 = new System.Windows.Forms.Button();
+            this.IconBox = new System.Windows.Forms.PictureBox();
+            this.OTdate = new System.Windows.Forms.DateTimePicker();
+            this.label1 = new System.Windows.Forms.Label();
+            this.Dt_1 = new System.Windows.Forms.DataGridView();
+            this.Column2 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+=======
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.Dt_1 = new System.Windows.Forms.DataGridView();
+>>>>>>> 5c66bde0f1701b8080dad176d8df9347aa0cef95
             this.BtnOpen = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.BtnSave = new System.Windows.Forms.Button();
@@ -73,6 +97,11 @@
             this.Dt2 = new System.Windows.Forms.DataGridView();
             this.dataGridViewCheckBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.label10 = new System.Windows.Forms.Label();
+<<<<<<< HEAD
+            this.tabControl1.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.IconBox)).BeginInit();
+=======
             this.Column2 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -87,6 +116,7 @@
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+>>>>>>> 5c66bde0f1701b8080dad176d8df9347aa0cef95
             ((System.ComponentModel.ISupportInitialize)(this.Dt_1)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -111,13 +141,23 @@
             this.tabControl1.Multiline = true;
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
+<<<<<<< HEAD
+            this.tabControl1.Size = new System.Drawing.Size(1203, 591);
+=======
             this.tabControl1.Size = new System.Drawing.Size(1193, 591);
+>>>>>>> 5c66bde0f1701b8080dad176d8df9347aa0cef95
             this.tabControl1.TabIndex = 26;
             // 
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.SystemColors.Control;
+<<<<<<< HEAD
+            this.tabPage1.Controls.Add(this.button1);
+            this.tabPage1.Controls.Add(this.IconBox);
+            this.tabPage1.Controls.Add(this.OTdate);
+=======
             this.tabPage1.Controls.Add(this.dateTimePicker1);
+>>>>>>> 5c66bde0f1701b8080dad176d8df9347aa0cef95
             this.tabPage1.Controls.Add(this.label1);
             this.tabPage1.Controls.Add(this.Dt_1);
             this.tabPage1.Controls.Add(this.BtnOpen);
@@ -128,14 +168,67 @@
             this.tabPage1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+<<<<<<< HEAD
+            this.tabPage1.Size = new System.Drawing.Size(1195, 553);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "新增資料";
+            // 
+            // button1
+            // 
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button1.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.button1.Location = new System.Drawing.Point(948, 496);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(99, 44);
+            this.button1.TabIndex = 44;
+            this.button1.Text = "計算";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // IconBox
+            // 
+            this.IconBox.Image = ((System.Drawing.Image)(resources.GetObject("IconBox.Image")));
+            this.IconBox.Location = new System.Drawing.Point(11, 496);
+            this.IconBox.Name = "IconBox";
+            this.IconBox.Size = new System.Drawing.Size(67, 56);
+            this.IconBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.IconBox.TabIndex = 43;
+            this.IconBox.TabStop = false;
+            this.IconBox.Click += new System.EventHandler(this.IconBox_Click);
+            // 
+            // OTdate
+            // 
+            this.OTdate.CustomFormat = "yyyy/MM/dd";
+            this.OTdate.Location = new System.Drawing.Point(118, 26);
+            this.OTdate.Name = "OTdate";
+            this.OTdate.Size = new System.Drawing.Size(161, 34);
+            this.OTdate.TabIndex = 42;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label1.Location = new System.Drawing.Point(15, 31);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(97, 25);
+            this.label1.TabIndex = 41;
+            this.label1.Text = "選擇日期:";
+            // 
+=======
             this.tabPage1.Size = new System.Drawing.Size(1185, 553);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "新增資料";
             // 
+>>>>>>> 5c66bde0f1701b8080dad176d8df9347aa0cef95
             // Dt_1
             // 
             this.Dt_1.AllowUserToAddRows = false;
             this.Dt_1.AllowUserToDeleteRows = false;
+<<<<<<< HEAD
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.GhostWhite;
+            this.Dt_1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+=======
+>>>>>>> 5c66bde0f1701b8080dad176d8df9347aa0cef95
             this.Dt_1.BackgroundColor = System.Drawing.SystemColors.Control;
             this.Dt_1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Dt_1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -154,8 +247,87 @@
             this.Dt_1.Name = "Dt_1";
             this.Dt_1.ReadOnly = true;
             this.Dt_1.RowTemplate.Height = 27;
+<<<<<<< HEAD
+            this.Dt_1.Size = new System.Drawing.Size(1176, 415);
+            this.Dt_1.TabIndex = 40;
+            this.Dt_1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Dt_1_CellContentClick);
+            this.Dt_1.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Dt_1_KeyUp);
+            // 
+            // Column2
+            // 
+            this.Column2.FalseValue = "No";
+            this.Column2.HeaderText = "";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            this.Column2.TrueValue = "Yes";
+            this.Column2.Width = 40;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "員工編號";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            this.Column3.Width = 120;
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "員工姓名";
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            this.Column4.Width = 120;
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "班別";
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            this.Column5.Width = 90;
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = "上班時間";
+            this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
+            this.Column6.Width = 120;
+            // 
+            // Column7
+            // 
+            this.Column7.HeaderText = "下班時間";
+            this.Column7.Name = "Column7";
+            this.Column7.ReadOnly = true;
+            this.Column7.Width = 120;
+            // 
+            // Column11
+            // 
+            this.Column11.HeaderText = "加班日期";
+            this.Column11.Name = "Column11";
+            this.Column11.ReadOnly = true;
+            this.Column11.Width = 140;
+            // 
+            // Column8
+            // 
+            this.Column8.HeaderText = "加班起始";
+            this.Column8.Name = "Column8";
+            this.Column8.ReadOnly = true;
+            this.Column8.Width = 120;
+            // 
+            // Column9
+            // 
+            this.Column9.HeaderText = "加班結束";
+            this.Column9.Name = "Column9";
+            this.Column9.ReadOnly = true;
+            this.Column9.Width = 120;
+            // 
+            // Column10
+            // 
+            this.Column10.HeaderText = "加班時數";
+            this.Column10.Name = "Column10";
+            this.Column10.ReadOnly = true;
+            this.Column10.Width = 120;
+=======
             this.Dt_1.Size = new System.Drawing.Size(1155, 415);
             this.Dt_1.TabIndex = 40;
+>>>>>>> 5c66bde0f1701b8080dad176d8df9347aa0cef95
             // 
             // BtnOpen
             // 
@@ -184,7 +356,11 @@
             // 
             this.BtnSave.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.BtnSave.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+<<<<<<< HEAD
+            this.BtnSave.Location = new System.Drawing.Point(1066, 496);
+=======
             this.BtnSave.Location = new System.Drawing.Point(1048, 509);
+>>>>>>> 5c66bde0f1701b8080dad176d8df9347aa0cef95
             this.BtnSave.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BtnSave.Name = "BtnSave";
             this.BtnSave.Size = new System.Drawing.Size(99, 44);
@@ -203,7 +379,11 @@
             this.tabPage2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+<<<<<<< HEAD
+            this.tabPage2.Size = new System.Drawing.Size(1195, 553);
+=======
             this.tabPage2.Size = new System.Drawing.Size(1064, 553);
+>>>>>>> 5c66bde0f1701b8080dad176d8df9347aa0cef95
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "更新資料";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -500,7 +680,11 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 34);
             this.tabPage3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage3.Name = "tabPage3";
+<<<<<<< HEAD
+            this.tabPage3.Size = new System.Drawing.Size(1195, 553);
+=======
             this.tabPage3.Size = new System.Drawing.Size(1064, 553);
+>>>>>>> 5c66bde0f1701b8080dad176d8df9347aa0cef95
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "刪除資料";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -540,8 +724,13 @@
             // 
             this.Dt.AllowUserToAddRows = false;
             this.Dt.AllowUserToDeleteRows = false;
+<<<<<<< HEAD
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.GhostWhite;
+            this.Dt.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
+=======
             dataGridViewCellStyle11.BackColor = System.Drawing.Color.GhostWhite;
             this.Dt.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle11;
+>>>>>>> 5c66bde0f1701b8080dad176d8df9347aa0cef95
             this.Dt.BackgroundColor = System.Drawing.SystemColors.Control;
             this.Dt.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Dt.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -574,7 +763,11 @@
             this.tabPage4.Location = new System.Drawing.Point(4, 34);
             this.tabPage4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage4.Name = "tabPage4";
+<<<<<<< HEAD
+            this.tabPage4.Size = new System.Drawing.Size(1195, 553);
+=======
             this.tabPage4.Size = new System.Drawing.Size(1064, 553);
+>>>>>>> 5c66bde0f1701b8080dad176d8df9347aa0cef95
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "查詢資料";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -604,8 +797,13 @@
             // 
             this.Dt2.AllowUserToAddRows = false;
             this.Dt2.AllowUserToDeleteRows = false;
+<<<<<<< HEAD
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.GhostWhite;
+            this.Dt2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
+=======
             dataGridViewCellStyle12.BackColor = System.Drawing.Color.GhostWhite;
             this.Dt2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle12;
+>>>>>>> 5c66bde0f1701b8080dad176d8df9347aa0cef95
             this.Dt2.BackgroundColor = System.Drawing.SystemColors.Control;
             this.Dt2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Dt2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -638,6 +836,8 @@
             this.label10.TabIndex = 8;
             this.label10.Text = "請輸入關鍵字:";
             // 
+<<<<<<< HEAD
+=======
             // Column2
             // 
             this.Column2.HeaderText = "";
@@ -716,11 +916,16 @@
             this.dateTimePicker1.Size = new System.Drawing.Size(161, 34);
             this.dateTimePicker1.TabIndex = 42;
             // 
+>>>>>>> 5c66bde0f1701b8080dad176d8df9347aa0cef95
             // OverTime
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+<<<<<<< HEAD
+            this.ClientSize = new System.Drawing.Size(1240, 625);
+=======
             this.ClientSize = new System.Drawing.Size(1210, 625);
+>>>>>>> 5c66bde0f1701b8080dad176d8df9347aa0cef95
             this.Controls.Add(this.tabControl1);
             this.Name = "OverTime";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -728,6 +933,10 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+<<<<<<< HEAD
+            ((System.ComponentModel.ISupportInitialize)(this.IconBox)).EndInit();
+=======
+>>>>>>> 5c66bde0f1701b8080dad176d8df9347aa0cef95
             ((System.ComponentModel.ISupportInitialize)(this.Dt_1)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
@@ -788,6 +997,13 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button BtnOpen;
         public System.Windows.Forms.DataGridView Dt_1;
+<<<<<<< HEAD
+        private System.Windows.Forms.DateTimePicker OTdate;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox IconBox;
+        private System.Windows.Forms.Button button1;
+=======
+>>>>>>> 5c66bde0f1701b8080dad176d8df9347aa0cef95
         private System.Windows.Forms.DataGridViewCheckBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
@@ -798,7 +1014,10 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
+<<<<<<< HEAD
+=======
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label1;
+>>>>>>> 5c66bde0f1701b8080dad176d8df9347aa0cef95
     }
 }

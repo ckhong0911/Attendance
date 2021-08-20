@@ -56,6 +56,10 @@
             this.DpIn = new System.Windows.Forms.DateTimePicker();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
+<<<<<<< HEAD:基本資料維護/員工基本資料/EmployDataCreate.Designer.cs
+            this.BtnAnnualLeaveUpdate = new System.Windows.Forms.Button();
+=======
+>>>>>>> 5c66bde0f1701b8080dad176d8df9347aa0cef95:基本資料維護/EmployDataCreate.Designer.cs
             this.BtnOpen2 = new System.Windows.Forms.Button();
             this.txtShiftUpdate = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
@@ -313,13 +317,13 @@
             // 
             // TbVacation
             // 
+            this.TbVacation.Enabled = false;
             this.TbVacation.Font = new System.Drawing.Font("微軟正黑體", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.TbVacation.Location = new System.Drawing.Point(429, 258);
             this.TbVacation.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TbVacation.Name = "TbVacation";
             this.TbVacation.Size = new System.Drawing.Size(89, 31);
             this.TbVacation.TabIndex = 8;
-            this.TbVacation.Text = "0";
             // 
             // Rb2
             // 
@@ -374,7 +378,7 @@
             this.DpBirthday.Name = "DpBirthday";
             this.DpBirthday.Size = new System.Drawing.Size(132, 31);
             this.DpBirthday.TabIndex = 5;
-            this.DpBirthday.Value = new System.DateTime(2021, 7, 25, 0, 0, 0, 0);
+            this.DpBirthday.Value = new System.DateTime(2000, 1, 1, 0, 0, 0, 0);
             // 
             // label6
             // 
@@ -396,7 +400,7 @@
             this.DpIn.Name = "DpIn";
             this.DpIn.Size = new System.Drawing.Size(132, 31);
             this.DpIn.TabIndex = 7;
-            this.DpIn.Value = new System.DateTime(2021, 7, 25, 0, 0, 0, 0);
+            this.DpIn.Value = new System.DateTime(2021, 8, 17, 0, 0, 0, 0);
             // 
             // tabPage2
             // 
@@ -416,6 +420,10 @@
             // 
             // panel1
             // 
+<<<<<<< HEAD:基本資料維護/員工基本資料/EmployDataCreate.Designer.cs
+            this.panel1.Controls.Add(this.BtnAnnualLeaveUpdate);
+=======
+>>>>>>> 5c66bde0f1701b8080dad176d8df9347aa0cef95:基本資料維護/EmployDataCreate.Designer.cs
             this.panel1.Controls.Add(this.BtnOpen2);
             this.panel1.Controls.Add(this.txtShiftUpdate);
             this.panel1.Controls.Add(this.label22);
@@ -446,6 +454,22 @@
             this.panel1.TabIndex = 26;
             this.panel1.Visible = false;
             // 
+<<<<<<< HEAD:基本資料維護/員工基本資料/EmployDataCreate.Designer.cs
+            // BtnAnnualLeaveUpdate
+            // 
+            this.BtnAnnualLeaveUpdate.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.BtnAnnualLeaveUpdate.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.BtnAnnualLeaveUpdate.Location = new System.Drawing.Point(497, 179);
+            this.BtnAnnualLeaveUpdate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.BtnAnnualLeaveUpdate.Name = "BtnAnnualLeaveUpdate";
+            this.BtnAnnualLeaveUpdate.Size = new System.Drawing.Size(38, 34);
+            this.BtnAnnualLeaveUpdate.TabIndex = 66;
+            this.BtnAnnualLeaveUpdate.Text = "...";
+            this.BtnAnnualLeaveUpdate.UseVisualStyleBackColor = true;
+            this.BtnAnnualLeaveUpdate.Click += new System.EventHandler(this.BtnAnnualLeaveUpdate_Click);
+            // 
+=======
+>>>>>>> 5c66bde0f1701b8080dad176d8df9347aa0cef95:基本資料維護/EmployDataCreate.Designer.cs
             // BtnOpen2
             // 
             this.BtnOpen2.FlatStyle = System.Windows.Forms.FlatStyle.System;
@@ -609,11 +633,16 @@
             // 
             // TbVacation2
             // 
+            this.TbVacation2.Enabled = false;
             this.TbVacation2.Font = new System.Drawing.Font("微軟正黑體", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.TbVacation2.Location = new System.Drawing.Point(403, 182);
             this.TbVacation2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TbVacation2.Name = "TbVacation2";
+<<<<<<< HEAD:基本資料維護/員工基本資料/EmployDataCreate.Designer.cs
+            this.TbVacation2.Size = new System.Drawing.Size(88, 31);
+=======
             this.TbVacation2.Size = new System.Drawing.Size(80, 31);
+>>>>>>> 5c66bde0f1701b8080dad176d8df9347aa0cef95:基本資料維護/EmployDataCreate.Designer.cs
             this.TbVacation2.TabIndex = 7;
             this.TbVacation2.Text = "0";
             // 
@@ -929,7 +958,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button BtnSave;
         private System.Windows.Forms.RadioButton Rb1;
-        private System.Windows.Forms.TextBox TbVacation;
         private System.Windows.Forms.RadioButton Rb2;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label5;
@@ -950,7 +978,6 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Button BtnUpdate;
         private System.Windows.Forms.RadioButton Rb3;
-        private System.Windows.Forms.TextBox TbVacation2;
         private System.Windows.Forms.RadioButton Rb4;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
@@ -981,5 +1008,11 @@
         public System.Windows.Forms.TextBox txtShiftUpdate;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Button BtnAnnualLeave;
+<<<<<<< HEAD:基本資料維護/員工基本資料/EmployDataCreate.Designer.cs
+        private System.Windows.Forms.Button BtnAnnualLeaveUpdate;
+        public System.Windows.Forms.TextBox TbVacation;
+        public System.Windows.Forms.TextBox TbVacation2;
+=======
+>>>>>>> 5c66bde0f1701b8080dad176d8df9347aa0cef95:基本資料維護/EmployDataCreate.Designer.cs
     }
 }
