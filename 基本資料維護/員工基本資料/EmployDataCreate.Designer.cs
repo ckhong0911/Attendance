@@ -56,10 +56,7 @@
             this.DpIn = new System.Windows.Forms.DateTimePicker();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
-<<<<<<< HEAD:基本資料維護/員工基本資料/EmployDataCreate.Designer.cs
             this.BtnAnnualLeaveUpdate = new System.Windows.Forms.Button();
-=======
->>>>>>> 5c66bde0f1701b8080dad176d8df9347aa0cef95:基本資料維護/EmployDataCreate.Designer.cs
             this.BtnOpen2 = new System.Windows.Forms.Button();
             this.txtShiftUpdate = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
@@ -420,10 +417,7 @@
             // 
             // panel1
             // 
-<<<<<<< HEAD:基本資料維護/員工基本資料/EmployDataCreate.Designer.cs
             this.panel1.Controls.Add(this.BtnAnnualLeaveUpdate);
-=======
->>>>>>> 5c66bde0f1701b8080dad176d8df9347aa0cef95:基本資料維護/EmployDataCreate.Designer.cs
             this.panel1.Controls.Add(this.BtnOpen2);
             this.panel1.Controls.Add(this.txtShiftUpdate);
             this.panel1.Controls.Add(this.label22);
@@ -454,7 +448,6 @@
             this.panel1.TabIndex = 26;
             this.panel1.Visible = false;
             // 
-<<<<<<< HEAD:基本資料維護/員工基本資料/EmployDataCreate.Designer.cs
             // BtnAnnualLeaveUpdate
             // 
             this.BtnAnnualLeaveUpdate.FlatStyle = System.Windows.Forms.FlatStyle.System;
@@ -468,8 +461,6 @@
             this.BtnAnnualLeaveUpdate.UseVisualStyleBackColor = true;
             this.BtnAnnualLeaveUpdate.Click += new System.EventHandler(this.BtnAnnualLeaveUpdate_Click);
             // 
-=======
->>>>>>> 5c66bde0f1701b8080dad176d8df9347aa0cef95:基本資料維護/EmployDataCreate.Designer.cs
             // BtnOpen2
             // 
             this.BtnOpen2.FlatStyle = System.Windows.Forms.FlatStyle.System;
@@ -638,11 +629,7 @@
             this.TbVacation2.Location = new System.Drawing.Point(403, 182);
             this.TbVacation2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TbVacation2.Name = "TbVacation2";
-<<<<<<< HEAD:基本資料維護/員工基本資料/EmployDataCreate.Designer.cs
             this.TbVacation2.Size = new System.Drawing.Size(88, 31);
-=======
-            this.TbVacation2.Size = new System.Drawing.Size(80, 31);
->>>>>>> 5c66bde0f1701b8080dad176d8df9347aa0cef95:基本資料維護/EmployDataCreate.Designer.cs
             this.TbVacation2.TabIndex = 7;
             this.TbVacation2.Text = "0";
             // 
@@ -1008,11 +995,8 @@
         public System.Windows.Forms.TextBox txtShiftUpdate;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Button BtnAnnualLeave;
-<<<<<<< HEAD:基本資料維護/員工基本資料/EmployDataCreate.Designer.cs
         private System.Windows.Forms.Button BtnAnnualLeaveUpdate;
         public System.Windows.Forms.TextBox TbVacation;
         public System.Windows.Forms.TextBox TbVacation2;
-=======
->>>>>>> 5c66bde0f1701b8080dad176d8df9347aa0cef95:基本資料維護/EmployDataCreate.Designer.cs
     }
 }

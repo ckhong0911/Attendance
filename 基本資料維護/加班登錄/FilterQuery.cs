@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Attendance
@@ -13,7 +7,6 @@ namespace Attendance
     public partial class FilterQuery : Form
     {
         OverTime grid;
-<<<<<<< HEAD
         DateTime date;
 
         FilterQuery() { }
@@ -23,15 +16,6 @@ namespace Attendance
             InitializeComponent();
             this.grid = grid;
             this.date = date;
-=======
-
-        FilterQuery() { }
-
-        public FilterQuery(OverTime grid)
-        {
-            InitializeComponent();
-            this.grid = grid;
->>>>>>> 5c66bde0f1701b8080dad176d8df9347aa0cef95
 
             string searchQuery = $"Select 員工編號,員工姓名 From [員工基本資料]";
             DataTable table = SqlCRUD.SqlQuery(searchQuery, "mdb");
@@ -57,7 +41,6 @@ namespace Attendance
                 {
                     if (Dt.Rows[i].Cells[0].Value.Equals("Yes"))
                     {
-<<<<<<< HEAD
                         int r = grid.Dt_1.Rows.Count - 1;
                         string empID = Dt.Rows[i].Cells[1].Value.ToString();
                         string name = Dt.Rows[i].Cells[2].Value.ToString();
@@ -66,6 +49,17 @@ namespace Attendance
                         //重複加入防呆設定
                         for (int k = 0; k <= r; k++)
                         {
+                            string dataQuery = "Select 員工編號 From [加班時數登錄] Where 員工編號='" + empID + "' And 加班日期='" + grid.OTdate.Text + "'";
+                            DataTable dataTable = SqlCRUD.SqlQuery(dataQuery, "mdb");
+
+                            if (dataTable.Rows.Count > 0)
+                            {
+                                MessageBox.Show("員工編號:" + empID + "\r\n" + "員工姓名:" + name + "\r\n" + "日期:" + date.ToString("yyyy/MM/dd") +
+                                        "\r\n" + "已存在加班資料", "System", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
+                                b = false;
+                                break;
+                            }
+
                             if (grid.Dt_1.Rows[k].Cells[1].Value.ToString() == empID)
                             {
                                 if (grid.Dt_1.Rows[k].Cells[6].Value.ToString() == date.ToString("yyyy/MM/dd"))
@@ -100,19 +94,6 @@ namespace Attendance
             grid.Dt_1.Columns["Column6"].DefaultCellStyle.Format = "HH:mm";
             grid.Dt_1.Columns["Column7"].DefaultCellStyle.Format = "HH:mm";
             Close();
-=======
-                        grid.Dt_1.Rows.Add();
-                        int r = grid.Dt_1.Rows.Count - 1;
-                        string empID = Dt.Rows[i].Cells[1].Value.ToString();
-
-                        //2021/8/14 陳sir 要先做特休
-                        //string searchQuery = "Select a.員工編號,a.員工姓名,b.起始時間,b.結束時間 From [員工基本資料] as a, 班別設定資料 as b Where 員工編號='" + empID + "'";
-                    }
-                }
-
-                if (i == Dt.Rows.Count - 1) Close();
-            }
->>>>>>> 5c66bde0f1701b8080dad176d8df9347aa0cef95
         }
 
         private void Tb_Search_TextChanged(object sender, EventArgs e)

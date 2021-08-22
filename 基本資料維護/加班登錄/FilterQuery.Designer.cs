@@ -33,8 +33,8 @@
             this.Tb_Search = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.Dt = new System.Windows.Forms.DataGridView();
-            this.BtnAdd = new System.Windows.Forms.Button();
             this.Column1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.BtnAdd = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Dt)).BeginInit();
             this.SuspendLayout();
             // 
@@ -42,19 +42,20 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label3.Location = new System.Drawing.Point(27, 29);
+            this.label3.Location = new System.Drawing.Point(20, 23);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(117, 25);
+            this.label3.Size = new System.Drawing.Size(93, 20);
             this.label3.TabIndex = 5;
             this.label3.Text = "輸入關鍵字:";
             // 
             // Tb_Search
             // 
             this.Tb_Search.Font = new System.Drawing.Font("微軟正黑體", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.Tb_Search.Location = new System.Drawing.Point(150, 28);
-            this.Tb_Search.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Tb_Search.Location = new System.Drawing.Point(117, 22);
+            this.Tb_Search.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Tb_Search.Name = "Tb_Search";
-            this.Tb_Search.Size = new System.Drawing.Size(172, 31);
+            this.Tb_Search.Size = new System.Drawing.Size(130, 27);
             this.Tb_Search.TabIndex = 6;
             this.Tb_Search.TextChanged += new System.EventHandler(this.Tb_Search_TextChanged);
             // 
@@ -63,9 +64,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("微軟正黑體", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(39, 54);
+            this.label1.Location = new System.Drawing.Point(29, 43);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(105, 22);
+            this.label1.Size = new System.Drawing.Size(86, 18);
             this.label1.TabIndex = 7;
             this.label1.Text = "(人名或編號)";
             // 
@@ -80,25 +82,14 @@
             this.Dt.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.Dt.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1});
-            this.Dt.Location = new System.Drawing.Point(32, 96);
+            this.Dt.Location = new System.Drawing.Point(24, 77);
+            this.Dt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Dt.Name = "Dt";
             this.Dt.ReadOnly = true;
             this.Dt.RowHeadersWidth = 28;
             this.Dt.RowTemplate.Height = 27;
-            this.Dt.Size = new System.Drawing.Size(290, 293);
+            this.Dt.Size = new System.Drawing.Size(288, 234);
             this.Dt.TabIndex = 8;
-            // 
-            // BtnAdd
-            // 
-            this.BtnAdd.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.BtnAdd.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.BtnAdd.Location = new System.Drawing.Point(32, 410);
-            this.BtnAdd.Name = "BtnAdd";
-            this.BtnAdd.Size = new System.Drawing.Size(290, 38);
-            this.BtnAdd.TabIndex = 9;
-            this.BtnAdd.Text = "加入";
-            this.BtnAdd.UseVisualStyleBackColor = true;
-            this.BtnAdd.Click += new System.EventHandler(this.BtnAdd_Click);
             // 
             // Column1
             // 
@@ -108,16 +99,30 @@
             this.Column1.TrueValue = "Yes";
             this.Column1.Width = 40;
             // 
+            // BtnAdd
+            // 
+            this.BtnAdd.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.BtnAdd.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.BtnAdd.Location = new System.Drawing.Point(24, 328);
+            this.BtnAdd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BtnAdd.Name = "BtnAdd";
+            this.BtnAdd.Size = new System.Drawing.Size(288, 30);
+            this.BtnAdd.TabIndex = 9;
+            this.BtnAdd.Text = "加入";
+            this.BtnAdd.UseVisualStyleBackColor = true;
+            this.BtnAdd.Click += new System.EventHandler(this.BtnAdd_Click);
+            // 
             // FilterQuery
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(353, 467);
+            this.ClientSize = new System.Drawing.Size(342, 374);
             this.Controls.Add(this.BtnAdd);
             this.Controls.Add(this.Dt);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Tb_Search);
             this.Controls.Add(this.label3);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FilterQuery";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "選擇人員";

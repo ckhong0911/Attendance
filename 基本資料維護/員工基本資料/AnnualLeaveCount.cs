@@ -5,16 +5,12 @@ namespace Attendance
 {
     public partial class AnnualLeaveCount : Form
     {
-<<<<<<< HEAD
         int flag;
         EmployDataCreate emp;
-=======
->>>>>>> 5c66bde0f1701b8080dad176d8df9347aa0cef95
 
         public AnnualLeaveCount()
         {
             InitializeComponent();
-<<<<<<< HEAD
         }
 
         public AnnualLeaveCount(string name, DateTime date, int flag, EmployDataCreate emp)
@@ -25,20 +21,6 @@ namespace Attendance
 
             lblname.Text = name;
             DpIn.Value = date;
-=======
-
-            //程式測試
-            DpIn.Format = DateTimePickerFormat.Custom;
-            DateTime currentTime = System.DateTime.Now;
-            UD_Year.Value = currentTime.Year;
-        }
-
-        public AnnualLeaveCount(string name, DateTime date)
-        {
-            InitializeComponent();
-            //lblname.Text = name;
-            //DpIn.Value = date;
->>>>>>> 5c66bde0f1701b8080dad176d8df9347aa0cef95
             DpIn.Format = DateTimePickerFormat.Custom;
             DateTime currentTime = System.DateTime.Now;
             UD_Year.Value = currentTime.Year;
@@ -199,7 +181,6 @@ namespace Attendance
             }
                 
         }
-<<<<<<< HEAD
 
         private void Rb_1_CheckedChanged(object sender, EventArgs e)
         {
@@ -251,7 +232,5 @@ namespace Attendance
             }
         }
 
-=======
->>>>>>> 5c66bde0f1701b8080dad176d8df9347aa0cef95
     }
 }

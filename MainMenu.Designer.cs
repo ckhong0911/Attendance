@@ -45,7 +45,6 @@ namespace Attendance
             this.請假登錄ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.加班登錄ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.上下班補登ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.加班補登ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripDropDownButton3 = new System.Windows.Forms.ToolStripDropDownButton();
             this.排班設定ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.員工排班ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -145,8 +144,7 @@ namespace Attendance
             this.行事曆維護ToolStripMenuItem,
             this.請假登錄ToolStripMenuItem,
             this.加班登錄ToolStripMenuItem,
-            this.上下班補登ToolStripMenuItem,
-            this.加班補登ToolStripMenuItem});
+            this.上下班補登ToolStripMenuItem});
             this.toolStripDropDownButton2.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.toolStripDropDownButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripDropDownButton2.Image")));
             this.toolStripDropDownButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -186,12 +184,6 @@ namespace Attendance
             this.上下班補登ToolStripMenuItem.Name = "上下班補登ToolStripMenuItem";
             this.上下班補登ToolStripMenuItem.Size = new System.Drawing.Size(216, 30);
             this.上下班補登ToolStripMenuItem.Text = "上/下班補登";
-            // 
-            // 加班補登ToolStripMenuItem
-            // 
-            this.加班補登ToolStripMenuItem.Name = "加班補登ToolStripMenuItem";
-            this.加班補登ToolStripMenuItem.Size = new System.Drawing.Size(216, 30);
-            this.加班補登ToolStripMenuItem.Text = "加班補登";
             // 
             // toolStripDropDownButton3
             // 
@@ -328,7 +320,6 @@ namespace Attendance
         private System.Windows.Forms.ToolStripMenuItem 行事曆維護ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 請假登錄ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 上下班補登ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 加班補登ToolStripMenuItem;
         private System.Windows.Forms.ToolStripDropDownButton toolStripDropDownButton3;
         private System.Windows.Forms.ToolStripMenuItem 排班設定ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 員工排班ToolStripMenuItem;

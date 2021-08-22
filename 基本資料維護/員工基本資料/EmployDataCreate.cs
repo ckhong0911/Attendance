@@ -78,14 +78,6 @@ namespace Attendance
                 return;
             }
             else if (txtShift.Text == "")
-<<<<<<< HEAD:基本資料維護/員工基本資料/EmployDataCreate.cs
-=======
-            {
-                MessageBox.Show("未選擇上班班別", "System", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
-                return;
-            }
-            else if (int.TryParse(TbVacation.Text, out num1) == false)
->>>>>>> 5c66bde0f1701b8080dad176d8df9347aa0cef95:基本資料維護/EmployDataCreate.cs
             {
                 MessageBox.Show("未選擇上班班別", "System", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
                 return;
@@ -133,10 +125,6 @@ namespace Attendance
         private void BtnUpdate_Click(object sender, EventArgs e)
         {
             string[] arr = { txtCardNumber.Text, TbID2.Text, TbName2.Text, "", comboBox2.Text, TbVacation2.Text, txtShiftUpdate.Text };
-<<<<<<< HEAD:基本資料維護/員工基本資料/EmployDataCreate.cs
-=======
-            int num1;
->>>>>>> 5c66bde0f1701b8080dad176d8df9347aa0cef95:基本資料維護/EmployDataCreate.cs
 
             if (arr[0] == "")
             {
@@ -458,7 +446,6 @@ namespace Attendance
 
         private void BtnAnnualLeave_Click(object sender, EventArgs e)
         {
-<<<<<<< HEAD:基本資料維護/員工基本資料/EmployDataCreate.cs
             if (TbName.Text.Length == 0)
             {
                 MessageBox.Show("員工姓名不可空白", "System", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1);
@@ -478,9 +465,6 @@ namespace Attendance
             }
 
             AnnualLeaveCount f = new AnnualLeaveCount(TbName2.Text, DpIn2.Value, 2, this);
-=======
-            AnnualLeaveCount f = new AnnualLeaveCount(TbName.Text, DpIn.Value);
->>>>>>> 5c66bde0f1701b8080dad176d8df9347aa0cef95:基本資料維護/EmployDataCreate.cs
             f.ShowDialog();
         }
     }
