@@ -107,6 +107,12 @@
     <Compile Include="WorkShiftSetting.Designer.cs">
       <DependentUpon>WorkShiftSetting.cs</DependentUpon>
     </Compile>
+    <Compile Include="基本資料維護\請假登錄\TakeOff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基本資料維護\請假登錄\TakeOff.Designer.cs">
+      <DependentUpon>TakeOff.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="基本資料維護\加班登錄\FilterQuery.resx">
       <DependentUpon>FilterQuery.cs</DependentUpon>
     </EmbeddedResource>
@@ -142,6 +148,9 @@
     </Compile>
     <EmbeddedResource Include="WorkShiftSetting.resx">
       <DependentUpon>WorkShiftSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基本資料維護\請假登錄\TakeOff.resx">
+      <DependentUpon>TakeOff.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

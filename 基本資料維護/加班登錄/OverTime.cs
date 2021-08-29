@@ -336,7 +336,7 @@ namespace Attendance
         //關鍵字搜尋(刪除資料頁面)
         private void TbSearch_TextChanged(object sender, EventArgs e)
         {
-            Filter(txtSearch.Text, Dt_3);
+            Filter(TbSearch.Text, Dt_3);
         }
 
         //關鍵字搜尋(查詢資料頁面)
@@ -377,7 +377,6 @@ namespace Attendance
 
                             MessageBox.Show("刪除完成", "System", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1);
                             tabControl1_SelectedIndexChanged(this, e);
-                            return;
                         }
                     }
             }

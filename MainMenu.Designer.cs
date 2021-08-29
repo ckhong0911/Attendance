@@ -97,43 +97,43 @@ namespace Attendance
             // 使用者管理ToolStripMenuItem
             // 
             this.使用者管理ToolStripMenuItem.Name = "使用者管理ToolStripMenuItem";
-            this.使用者管理ToolStripMenuItem.Size = new System.Drawing.Size(190, 30);
+            this.使用者管理ToolStripMenuItem.Size = new System.Drawing.Size(216, 30);
             this.使用者管理ToolStripMenuItem.Text = "使用者管理";
             // 
             // 時間校正ToolStripMenuItem
             // 
             this.時間校正ToolStripMenuItem.Name = "時間校正ToolStripMenuItem";
-            this.時間校正ToolStripMenuItem.Size = new System.Drawing.Size(190, 30);
+            this.時間校正ToolStripMenuItem.Size = new System.Drawing.Size(216, 30);
             this.時間校正ToolStripMenuItem.Text = "時間校正";
             // 
             // 資料庫維護ToolStripMenuItem
             // 
             this.資料庫維護ToolStripMenuItem.Name = "資料庫維護ToolStripMenuItem";
-            this.資料庫維護ToolStripMenuItem.Size = new System.Drawing.Size(190, 30);
+            this.資料庫維護ToolStripMenuItem.Size = new System.Drawing.Size(216, 30);
             this.資料庫維護ToolStripMenuItem.Text = "資料庫維護";
             // 
             // 卡機維護ToolStripMenuItem
             // 
             this.卡機維護ToolStripMenuItem.Name = "卡機維護ToolStripMenuItem";
-            this.卡機維護ToolStripMenuItem.Size = new System.Drawing.Size(190, 30);
+            this.卡機維護ToolStripMenuItem.Size = new System.Drawing.Size(216, 30);
             this.卡機維護ToolStripMenuItem.Text = "卡機維護";
             // 
             // 印表機設定ToolStripMenuItem
             // 
             this.印表機設定ToolStripMenuItem.Name = "印表機設定ToolStripMenuItem";
-            this.印表機設定ToolStripMenuItem.Size = new System.Drawing.Size(190, 30);
+            this.印表機設定ToolStripMenuItem.Size = new System.Drawing.Size(216, 30);
             this.印表機設定ToolStripMenuItem.Text = "印表機設定";
             // 
             // 登入ToolStripMenuItem
             // 
             this.登入ToolStripMenuItem.Name = "登入ToolStripMenuItem";
-            this.登入ToolStripMenuItem.Size = new System.Drawing.Size(190, 30);
+            this.登入ToolStripMenuItem.Size = new System.Drawing.Size(216, 30);
             this.登入ToolStripMenuItem.Text = "登入";
             // 
             // 離開ToolStripMenuItem
             // 
             this.離開ToolStripMenuItem.Name = "離開ToolStripMenuItem";
-            this.離開ToolStripMenuItem.Size = new System.Drawing.Size(190, 30);
+            this.離開ToolStripMenuItem.Size = new System.Drawing.Size(216, 30);
             this.離開ToolStripMenuItem.Text = "離開";
             // 
             // toolStripDropDownButton2
@@ -171,6 +171,7 @@ namespace Attendance
             this.請假登錄ToolStripMenuItem.Name = "請假登錄ToolStripMenuItem";
             this.請假登錄ToolStripMenuItem.Size = new System.Drawing.Size(216, 30);
             this.請假登錄ToolStripMenuItem.Text = "請假登錄";
+            this.請假登錄ToolStripMenuItem.Click += new System.EventHandler(this.請假登錄ToolStripMenuItem_Click);
             // 
             // 加班登錄ToolStripMenuItem
             // 
@@ -227,13 +228,13 @@ namespace Attendance
             // 刷卡資料統計ToolStripMenuItem
             // 
             this.刷卡資料統計ToolStripMenuItem.Name = "刷卡資料統計ToolStripMenuItem";
-            this.刷卡資料統計ToolStripMenuItem.Size = new System.Drawing.Size(210, 30);
+            this.刷卡資料統計ToolStripMenuItem.Size = new System.Drawing.Size(216, 30);
             this.刷卡資料統計ToolStripMenuItem.Text = "刷卡資料統計";
             // 
             // 考勤資料統計ToolStripMenuItem
             // 
             this.考勤資料統計ToolStripMenuItem.Name = "考勤資料統計ToolStripMenuItem";
-            this.考勤資料統計ToolStripMenuItem.Size = new System.Drawing.Size(210, 30);
+            this.考勤資料統計ToolStripMenuItem.Size = new System.Drawing.Size(216, 30);
             this.考勤資料統計ToolStripMenuItem.Text = "考勤資料統計";
             // 
             // toolStripDropDownButton5
@@ -252,13 +253,13 @@ namespace Attendance
             // 刷卡資料查詢ToolStripMenuItem
             // 
             this.刷卡資料查詢ToolStripMenuItem.Name = "刷卡資料查詢ToolStripMenuItem";
-            this.刷卡資料查詢ToolStripMenuItem.Size = new System.Drawing.Size(210, 30);
+            this.刷卡資料查詢ToolStripMenuItem.Size = new System.Drawing.Size(216, 30);
             this.刷卡資料查詢ToolStripMenuItem.Text = "刷卡資料查詢";
             // 
             // 考勤資料查詢ToolStripMenuItem
             // 
             this.考勤資料查詢ToolStripMenuItem.Name = "考勤資料查詢ToolStripMenuItem";
-            this.考勤資料查詢ToolStripMenuItem.Size = new System.Drawing.Size(210, 30);
+            this.考勤資料查詢ToolStripMenuItem.Size = new System.Drawing.Size(216, 30);
             this.考勤資料查詢ToolStripMenuItem.Text = "考勤資料查詢";
             // 
             // toolStripDropDownButton6
@@ -271,19 +272,19 @@ namespace Attendance
             this.toolStripDropDownButton6.Image = ((System.Drawing.Image)(resources.GetObject("toolStripDropDownButton6.Image")));
             this.toolStripDropDownButton6.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripDropDownButton6.Name = "toolStripDropDownButton6";
-            this.toolStripDropDownButton6.Size = new System.Drawing.Size(92, 29);
-            this.toolStripDropDownButton6.Text = "說明(&A)";
+            this.toolStripDropDownButton6.Size = new System.Drawing.Size(93, 29);
+            this.toolStripDropDownButton6.Text = "說明(&H)";
             // 
             // 幫助ToolStripMenuItem
             // 
             this.幫助ToolStripMenuItem.Name = "幫助ToolStripMenuItem";
-            this.幫助ToolStripMenuItem.Size = new System.Drawing.Size(150, 30);
+            this.幫助ToolStripMenuItem.Size = new System.Drawing.Size(216, 30);
             this.幫助ToolStripMenuItem.Text = "幫助";
             // 
             // 關於我ToolStripMenuItem
             // 
             this.關於我ToolStripMenuItem.Name = "關於我ToolStripMenuItem";
-            this.關於我ToolStripMenuItem.Size = new System.Drawing.Size(150, 30);
+            this.關於我ToolStripMenuItem.Size = new System.Drawing.Size(216, 30);
             this.關於我ToolStripMenuItem.Text = "關於我";
             // 
             // MainMenu

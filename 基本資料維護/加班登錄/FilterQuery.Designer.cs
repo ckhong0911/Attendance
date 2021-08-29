@@ -52,7 +52,7 @@
             // Tb_Search
             // 
             this.Tb_Search.Font = new System.Drawing.Font("微軟正黑體", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.Tb_Search.Location = new System.Drawing.Point(117, 22);
+            this.Tb_Search.Location = new System.Drawing.Point(119, 22);
             this.Tb_Search.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Tb_Search.Name = "Tb_Search";
             this.Tb_Search.Size = new System.Drawing.Size(130, 27);
@@ -88,7 +88,7 @@
             this.Dt.ReadOnly = true;
             this.Dt.RowHeadersWidth = 28;
             this.Dt.RowTemplate.Height = 27;
-            this.Dt.Size = new System.Drawing.Size(288, 234);
+            this.Dt.Size = new System.Drawing.Size(271, 234);
             this.Dt.TabIndex = 8;
             // 
             // Column1
@@ -106,7 +106,7 @@
             this.BtnAdd.Location = new System.Drawing.Point(24, 328);
             this.BtnAdd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BtnAdd.Name = "BtnAdd";
-            this.BtnAdd.Size = new System.Drawing.Size(288, 30);
+            this.BtnAdd.Size = new System.Drawing.Size(271, 30);
             this.BtnAdd.TabIndex = 9;
             this.BtnAdd.Text = "加入";
             this.BtnAdd.UseVisualStyleBackColor = true;
@@ -116,16 +116,17 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(342, 374);
+            this.ClientSize = new System.Drawing.Size(320, 374);
+            this.Controls.Add(this.Tb_Search);
             this.Controls.Add(this.BtnAdd);
             this.Controls.Add(this.Dt);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.Tb_Search);
             this.Controls.Add(this.label3);
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FilterQuery";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "選擇人員";
+            this.Load += new System.EventHandler(this.FilterQuery_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Dt)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

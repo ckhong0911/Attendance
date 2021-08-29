@@ -46,6 +46,12 @@ namespace Attendance
             f.ShowDialog();
         }
 
+        private void 請假登錄ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TakeOff f = new TakeOff();
+            f.ShowDialog();
+        }
+
         //private void BtnWorkShiftSetting_Click(object sender, EventArgs e)
         //{
         //    WorkShiftSetting f = new WorkShiftSetting();
